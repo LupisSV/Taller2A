@@ -1,0 +1,183 @@
+--/**body {
+  font-family: "Poppins", sans-serif;
+  color:purple;
+ }
+
+h1{
+	font-family: "Poppins", sans-serif;
+ 	color:red;	
+}
+
+
+ h2{
+ 	font-family: "Poppins", sans-serif;
+ 	background: #ff7388;
+ }
+
+section {
+  padding: 5px 0;
+}**/
+
+body{
+}
+
+h1{
+	font-family: sans-serif;
+	font-size: 30px;
+	color: purple;
+
+}
+
+.h1{
+  font-size: 35px;
+  color:green;
+  text-align: center;
+}
+
+h2{
+	 font-family: "Garamond";
+	font-size: 40px;
+	color:purple ;
+  padding: 50px 20px 20px 50px;
+}
+
+ .h2{
+  font-family: "Poppins", sans-serif;
+  
+ }
+
+ .h2_blanco{
+   font-family: "Brush Script MT", cursive;
+   color:white;
+ }
+
+ p{
+  text-align: justify;
+ }
+
+ .p_tam{
+  background-size: 20px;
+ }
+
+ .p_blanco{
+  color:white;
+ }
+
+.section{
+	margin:50px;
+}
+
+hr{
+	border-color:purple;
+}
+
+
+
+.blanco{
+	background-color: white;
+}
+
+/*Barra de navegación*/
+header{
+  background: #1e0bd0;
+}
+
+header ul li {
+  float: left;
+  font-family: Arial, sans-serif;
+  font-size: 16px;
+}
+
+header a {
+  font-weight: bold;
+}
+
+header ul li:hover {
+  background: blueviolet;
+}
+
+
+/* FORM */
+#formulario {
+  /*IMPORTANTE*/
+  padding: 25px 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+table, th, td {
+  border: 1px solid black;
+  border-collapse: collapse;
+}
+th, td {
+  padding: 5px;
+  text-align: left;    
+}
+
+/****************************************** CODIGO ANTERIOR NO DESCARTABLE *******************************************/
+nav {
+  float: right; /* Desplazamos el nav hacia la izquierda */
+}
+nav ul {
+  list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;
+; /* Limpiamos errores de float */
+}
+
+nav ul li {
+  float: left;
+  font-family: Arial, sans-serif;
+  font-size: 16px;
+}
+
+nav ul li a {
+  display: block; /* Convertimos los elementos a en elementos bloque para manipular el padding */
+  padding: 14px;
+  color: #fff;
+  text-decoration: none;
+  background: purple;
+}
+
+nav ul li:hover {
+  background: black;
+}
+/****************************************** CODIGO ANTERIOR NO DESCARTABLE *******************************************/
+
+
+
+.azul{
+  background-color:  #252850;
+}
+
+footer{
+  background-color: #008f39;
+  padding: 25px;
+}
+
+h3{
+  text-align: center;
+  color: white;
+}
+
+.tortuga{
+  background-image: url(../img/fondo.jpg);
+}
+
+label{
+  font-size: 20px;
+  text-align: center;
+  font-style: bold;
+}
+
+.fondo
+{
+  background-image: url(../img/fondo2.jpg);
+}
+
+.padding{
+  padding: 25px;
+}

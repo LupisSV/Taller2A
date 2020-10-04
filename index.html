@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>CÁPARA SONIA - MONSERRAT SANDOVAL</title>
+	<link rel="shortcut icon" href="img/turtle.png"> 
+	<link rel="stylesheet" type="text/css" href="css/bootstrap.css">
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="css/font-awesome.css">
+</head>
+<body>
+	<header class="navbar navbar-expand navbar-dark flex-column flex-md-row bd-navbar">
+		  <a class="navbar-brand" href="#">
+		    <img src="img/turtle.png" width="30" height="30" class="d-inline-block align-top" alt="" loading="lazy">
+		    CÁPARA SONIA
+		  </a>
+
+		  <div class="navbar-nav ml-md-auto">
+		    <ul class="navbar-nav bd-navbar-nav flex-row" id="items">
+		      	<li class="nav-item">
+		      		<a class="nav-link" href="#Nosotros" target="blank" onclick="muestraMensaje()" title="">¿Quiénes somos?</a>
+		      	</li>
+		      	<li class="nav-item">
+					<a class="nav-link" href="#Productos" title="">¿Nuestros productos?</a>
+				</li>
+		      	<li class="nav-item">
+					<a class="nav-link" href="#Comprar_linea" title="">Compra en línea</a>
+				</li>
+		      	
+		    </ul>
+		    <h4 id="clock"></h4>
+		  </div>
+		</header>
+
+		<section id="Nosotros">
+			<div class="container ">
+	 			<div class="row">
+	 				<div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
+	 					 <div  >
+								<h2 align="left" > ¿Quiénes somos?</h2>
+							</div>
+						<p><strong>Cápara Sonia</strong> es una pequeña empresa que se dedica a consentir a tu mascota a través de productos de calidad que aportan gran felicidad para ellos, además, a diferencia de otros productos en el meracado <strong><i>Cápara Sonia</i></strong> son productos de calidad a bajo costo.</p>
+						<p>Te invitamos a que conozcas nuestros productos y si tienes alguna duda nos consultes a través del formulario.</p>
+					</div>
+					<div class="col-lg-6 col-md-6 col-sm-6 col-xs-12" style="vertical-align: center;">
+						<br><br>
+	 					 <img id="" src="img/nosotros.jpg" width="100%" height="responsive" class="padding">
+	 				</div>
+				</div>
+			</div>
+		</section>
+
+		<section class="tortuga" >
+			<div class="container" id="formulario">
+	 			<div class="row">
+	 				<div class="col-12">
+		 				<form id="formulario_productos" name="formulario_productos" action="" method="">
+		 					<h1 class="h1">Registro de Productos</h1>
+	                        <div class="form-group col-lg-12 col-md-12 col-sm-12 col-xs-12">
+	                        	<label>Nombre de producto:</label>
+	                           	<input type="text" class="form-control" name="nombre_producto" id="nombre_producto" required>
+	                        </div> 
+	                        <div class="form-group col-lg-12 col-md-12 col-sm-12 col-xs-12">
+	                        	<label>Descripción:</label>
+	                           	<input type="text" class="form-control" name="descripcion_producto" id="descripcion_producto" required>
+	                        </div> 
+	                        <div class="form-group col-lg-12 col-md-12 col-sm-12 col-xs-12">
+	                        	<label>Precio:</label>
+	                           	<input type="number" step="1" class="form-control" name="precio_producto" id="precio_producto" required>
+	                        </div> 
+	                        <div class="form-group col-lg-12 col-md-12 col-sm-12 col-xs-12" align="center">
+	                        	<a class="btn btn-primary" onclick="ingresarinicio()">Ingresar inicio</a>
+	                        	<button type="submit" class="btn btn-primary" id="btnGuardarProducto">Ingresar final</button>
+	                        </div> 
+	                        <div class="form-group col-lg-12 col-md-12 col-sm-12 col-xs-12" align="center">
+	                        	<a class="btn btn-warning" onclick="borrarinicio()">Borrar inicio</a>
+	                        	<a class="btn btn-warning" onclick="borrarfinal()">Borrar final</a>
+	                        </div>
+	                        <div class="form-group col-lg-12 col-md-12 col-sm-12 col-xs-12" align="center">
+	                        	<a class="btn btn-success" onclick="imprimirreversa()">Invertir productos</a>
+	                        	<a class="btn btn-success" onclick="imprimirproductos()">Imprimir productos</a>
+	                        </div> 
+		 				</form>	 					
+	 				</div>
+				</div>
+			</div>
+		</section>
+
+		<section class="fondo pading">
+			<h1 class="h1">Comprar en línea</h1>
+			<div class="container" id="formulario">
+				<div class="row">
+					<table style="width:100%" id="misProductos">
+					  <tr>
+					    <th>Agregar a mi lista</th>
+					    <th>Producto</th>
+					    <th>Descripción</th>
+					    <th>Precio</th>
+					  </tr>
+					</table>
+				</div>
+			</div>
+		</section>
+
+		<section id="Comprar_linea" class="fondo">
+			<div class="container" id="formulario">
+
+				<div class="row">
+
+					<div>
+
+						<table style="width:100%" id="CompraProductos">
+						  <tr>
+						    <th>Eliminar</th>
+						    <th>Producto</th>
+						    <th>Precio</th>
+						    <th>Cantidad</th>
+						    <th>Subtotal</th>
+						  </tr>
+						</table>
+						
+					</div>
+					<br>
+					<br>
+					<div align="rigth">
+						<h4 id="total">$ 0.00</h4><a class="btn btn-success" id="botonComprar" onclick="comprarProductos()"><i class="fa fa-shopping-cart"></i> Comprar</a>
+					</div>
+                  		
+                  	
+				</div>
+			</div>
+		</section>
+
+	<footer>
+		<h3>Guadalupe Monserrat Sandoval Vizcaino</h3>
+	</footer>
+	<script type="text/javascript" src="js/jquery-3.1.1.min.js"></script>
+	<script src="js/interaccion.js"></script>
+</body>
+</html>
